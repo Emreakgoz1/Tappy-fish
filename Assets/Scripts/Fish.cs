@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fish : MonoBehaviour
 {
     Rigidbody2D rb;
+    public float _speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class Fish : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             rb.velocity = Vector2.zero;
-            rb.velocity = new Vector2(rb.velocity.x, 5f);
+            rb.velocity = new Vector2(rb.velocity.x,_speed);
         }
     }
 }
