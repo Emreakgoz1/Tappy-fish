@@ -20,10 +20,4 @@ public class Score : MonoBehaviour
         score++;
         score_Text.text = score.ToString();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
